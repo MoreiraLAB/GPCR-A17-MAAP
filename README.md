@@ -1,7 +1,7 @@
 ## GPCR-A17 MAAP - Mapping modulators, agonists, and antagonists to Predict the Next Bioactive Target
 
 ## Abstract: 
-G Protein-Coupled Receptors (GPCRs) are vital players in cellular signaling and key drug discovery targets, especially within the GPCR-A17 subfamily, which is linked to neurological disorders. To address the growing need for effective treatments, GPCR-A17 MAAP (modulator, agonist, antagonist predictor) is introduced as an advanced ensemble machine learning model designed to predict the functional roles of ligands in GPCR-A17 interactions. Using a dataset of over 3,000 ligands and 6,900 protein-ligand interactions from sources like the Guide to Pharmacology, Therapeutic Target Database, and ChEMBL, the model demonstrated robust performance. It achieved F1 scores of 0.9261 and 0.7115, AUCs of 0.9797 and 0.8654, and specificities of 0.9734 and 0.8738 on testing and drug validation datasets. A Ki-enriched subset of 4,274 interactions improved F1 scores to 0.9330 and 0.8267. By guiding experimental validation, GPCR-A17 MAAP accelerates drug discovery for neurological diseases. The code and data are available on GitHub (https://github.com/MoreiraLAB/GPCRA17MAAP).
+G Protein-Coupled Receptors (GPCRs) are vital players in cellular signaling and key drug discovery targets, especially within the GPCR-A17 subfamily, which is linked to neurological disorders. To address the growing need for effective treatments, GPCR-A17 MAAP (modulator, agonist, antagonist predictor) is introduced as an advanced ensemble machine learning model designed to predict the functional roles of ligands in GPCR-A17 interactions. Using a dataset of over 3,000 ligands and 6,900 protein-ligand interactions from sources like the Guide to Pharmacology, Therapeutic Target Database, and ChEMBL, the model demonstrated robust performance. It achieved F1 scores of 0.9217 and 0.6930, AUCs of 0.9804 and 0.8668, and specificities of 0.9717 and 0.8787 on testing and drug validation datasets. A Ki-enriched subset of 4,274 interactions improved F1 scores to 0.9330 and 0.8267. By guiding experimental validation, GPCR-A17 MAAP accelerates drug discovery for neurological diseases. The code and data are available on GitHub (https://github.com/MoreiraLAB/GPCR-A17-MAAP).
 ### Prerequisites:
 GPCR-A17 MAAP was developed and tested as follows:
 > Python 3.7.2 (default, July 12 2024)
@@ -168,8 +168,9 @@ python3 gbm_5init_ Kifiltered.py
 python3 gpcr_a17_maap_ Kifiltered.py
 ```
 
-###New Prediction:
+### New Prediction:
 If you want to make a new prediction, you will need the SMILES and sequences of the ligand-GPCR-A17 complexes you are interested in. Additionally, you have two options, depending on whether you have Ki values available for your drug-GPCR-A17 complexes: use GPCR-A17 MAAP or GPCR-A17 MAAP (Ki-filtered).
+
 If you do not have the Ki values available, you can use our GPCR-A17 MAAP to make a new prediction: 
 You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Save this Excel file as new_prediction.xlsx and place it in the ./data folder. We provide an example file in the ./data folder.
 Change directory to your ./new_prediciton folder:
@@ -179,7 +180,8 @@ cd ./ new_prediciton
 
 0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the ./new_prediction folder.
 change/here/to/your/directory/here/gpcr_a17_maap/new_prediction
- 1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
+
+1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
 
 ```bash
 python3 new_prediction.py
@@ -194,10 +196,10 @@ cd ./gpcr_a17_maap_Ki_filtered/new_prediciton
 
 0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the ./new_prediction folder.
 
- 1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP (Ki-filtered). This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP_Kifiltered.csv”), which can be found in the new_prediction folder.
+1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP (Ki-filtered). This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP_Kifiltered.csv”), which can be found in the new_prediction folder.
 
 ```bash
-python3 new_prediction.py
+python3 new_prediction_Kifiltered.py
 ```
 
 Authors:
