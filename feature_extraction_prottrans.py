@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-__author__ = "Ana B. Caniceiro, Ana M. B. Amorim, N√≠cia Ros√°rio-Ferreira, Irina S. Moreira"
+__author__ = "Ana B. Caniceiro, Ana M. B. Amorim, NÌcia Ros·rio-Ferreira, Irina S. Moreira"
 __email__ = "irina.moreira@cnc.uc.pt"
 __group__ = "Data-Driven Molecular Design"
 __group_leader__ = "Irina S. Moreira"
@@ -88,7 +88,7 @@ for idx, embedding in enumerate(all_protein_embeddings):
 df = pd.DataFrame(data)
 
 # Save the DataFrame to a CSV file
-df.to_csv(output_path+"ProtTrans_embeddings.csv", index=False)
+df.to_csv(output_path + "ProtTrans_embeddings.csv", index=False)
 
 # Display the DataFrame
 print(df)

@@ -15,7 +15,8 @@ from variables import *
 import os 
 
 # Load datasets and features
-GPCR_A17_df= pd.read_csv(DATA_FOLDER + SYSTEM_SEP + 'GPCRA17.csv')
+# Change for your files names
+GPCR_A17_df= pd.read_csv(DATA_FOLDER + SYSTEM_SEP + 'GPCRA17_Ki.csv')
 ProtTrans_features_df =pd.read_csv(PROTTRANS_FOLDER + SYSTEM_SEP + 'ProtTrans_embeddings.csv', low_memory=False)
 Mold_features_df=pd.read_csv(MOLD2_FOLDER + SYSTEM_SEP + 'GPCRA17_features_Mold2.csv', low_memory=False)
 
@@ -46,12 +47,12 @@ deduplicated_data = GPCR_Mold_PT_df.drop_duplicates(subset=['Smiles'], keep=Fals
 # If there are, take a random sample of 427 rows from the deduplicated data.
 # If your dataset has more entries, please change the number of unique entries.
 
-if deduplicated_data.shape[0] >= 692:
+if deduplicated_data.shape[0] >= 427:
     # Randomly sample 427 entries from the deduplicated dataset, using a fixed random seed for reproducibility.
-    test_data = deduplicated_data.sample(n=692, random_state=42)
+    test_data = deduplicated_data.sample(n=427, random_state=42)
 else:
     # If there are fewer than 427 unique entries, print an error message.
-    print("Error: Not enough entries to sample 692.")
+    print("Error: Not enough entries to sample 427.")
 
 # Get the indices of the test data.
 Test_indices = test_data.index
