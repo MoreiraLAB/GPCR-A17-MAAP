@@ -3,7 +3,7 @@
 ## Abstract: 
 G Protein-Coupled Receptors (GPCRs) are vital players in cellular signaling and key drug discovery targets, especially within the GPCR-A17 subfamily, which is linked to neurological disorders. To address the growing need for effective treatments, GPCR-A17 MAAP (modulator, agonist, antagonist predictor) is introduced as an advanced ensemble machine learning model designed to predict the functional roles of ligands in GPCR-A17 interactions. Using a dataset of over 3,000 ligands and 6,900 protein-ligand interactions from sources like the Guide to Pharmacology, Therapeutic Target Database, and ChEMBL, the model demonstrated robust performance. It achieved F1 scores of 0.9217 and 0.6930, AUCs of 0.9804 and 0.8668, and specificities of 0.9717 and 0.8787 on testing and drug validation datasets. A Ki-enriched subset of 4,274 interactions improved F1 scores to 0.9330 and 0.8267. By guiding experimental validation, GPCR-A17 MAAP accelerates drug discovery for neurological diseases. The code and data are available on GitHub (https://github.com/MoreiraLAB/GPCR-A17-MAAP).
 
-![Alt text](https://raw.githubusercontent.com/MoreiraLAB/GPCR-A17-MAAP/main/GA.png)
+![Alt text](GA.png)
 
 ### Prerequisites:
 GPCR-A17 MAAP was developed and tested as follows:
