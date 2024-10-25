@@ -40,7 +40,7 @@ These requirements can be met using a pip.
 
 After cloning this repository, GPCR-A17 MAAP - Mapping Your Next Bioactive Target can be replicated by following the steps described in section 'Replication' of this repository. 
 ```bash
-git clone https://github.com/MoreiraLAB/GPCRA17MAAP 
+git clone https://github.com/MoreiraLAB/GPCR-A17-MAAP 
 ```
 
 ### Data:
