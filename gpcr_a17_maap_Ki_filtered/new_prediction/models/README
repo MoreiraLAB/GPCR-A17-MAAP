@@ -1,0 +1,1 @@
+Directory with the best models of each base model (LightGBM (Ki-filtered, RF (Ki-filtered, and XGBoost (Ki-filtered)) and the metamodel GPCR-A17-MAAP (Ki-filtered), to use in new predictions.
