@@ -1,0 +1,7 @@
+This directory contains the datasets used to train, validate, and test the GPCR-A17-MAAP metamodel, as well as an additional dataset, Drugs Never Seen, which includes ligands not previously encountered by the model during training or testing. These datasets are made available for download to facilitate reproducibility of the GPCR-A17-MAAP metamodel and to support benchmark comparisons with new or existing datasets.
+
+Datasets Included:
+Train: Dataset used for training the model.
+Validation: Dataset for model tuning and hyperparameter optimization.
+Test: Dataset for model evaluation, offering insights into performance on known data.
+Drugs Never Seen: Dataset containing novel ligands, allowing for external validation and performance assessment on data outside the model’s training scope.
