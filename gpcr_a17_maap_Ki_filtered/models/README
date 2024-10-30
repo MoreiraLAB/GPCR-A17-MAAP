@@ -1,0 +1,1 @@
+Directory for saving the best models of each base model (lightGBM (Ki-filtered), Random Forest (Ki-filtered), and XGBoost (Ki-filtered)) and the metamodel GPCR-A17-MAAP (Ki-filtered).
