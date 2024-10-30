@@ -1,0 +1,1 @@
+Directory for saving the best models of each base model (DNN, KNN, lightGBM, Logistic Regression, Random Forest, and XGBoost) and the metamodel GPCR-A17-MAAP.
