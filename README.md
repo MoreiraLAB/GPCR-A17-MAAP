@@ -53,7 +53,12 @@ Script files:
 After installing and setting up the environment, these scripts should run without requiring any changes, except for modifying the directory in variables.py to point to your GPCR_A17_MAAP repository, where it currently says change/directory/here/to/your/GPCR_A17_MAAP/repository.
 
  0) **```variables.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to your GPCR_A17_MAAP repository.
- 1) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
+
+```bash
+python variables.py
+```
+
+ 2) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
 python feature_extraction_prottrans.py
@@ -124,7 +129,12 @@ Change directory to your ./gpcr_a17_maap_Ki_filtered folder:
 cd ./gpcr_a17_maap_Ki_filtered
 ```
 0) **```variables.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the ./gpcr_a17_maap_Ki_filtered folder.
-1) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
+
+```bash
+python variables.py
+```
+
+2) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
 python feature_extraction_prottrans.py
