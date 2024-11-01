@@ -140,24 +140,24 @@ python variables.py
 2) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
-python feature_extraction_prottrans.py
+python feature_extraction_prottrans_Kifiltered.py
 ```
 
  2) **``` feature_extraction_mold2.py```** - Ligand features extraction. The output of this script can be found in ./features/mold2 folder.
 
 ```bash
-python feature_extraction_mold2.py
+python feature_extraction_mold2_Kifiltered.py
 ```
  3) **``` join_features.py```** - Script to join the features extracted from proteins and ligands. The new dataset can be found in ./features/ folder.
 
 ```bash
-python join_features.py
+python join_features_Kifiltered.py
 ```
 
  4) **``` drug_val_dev.py```** - Script for development of the drug validation dataset, and creation of the X and y datasets for the remaining and drug validation datasets. The output can be found in ./features/splits/ folder. 
 
 ```bash
-python drug_val_dev.py
+python drug_val_dev_Kifiltered.py
 ```
 
  5) **``` xgb_5init_Kifiltered.py```** - Script to train, test and validate the Extreme Gradient Boosting (XGBoost) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
