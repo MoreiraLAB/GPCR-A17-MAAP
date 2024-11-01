@@ -32,7 +32,7 @@ These requirements can be met using a pip.
 * transformers - version 4.41.2 .
 * protobuf - version 3.20.3 .
 * sentencepiece - version 0.2.0 .
-* Mold2_pywrapper - version 0.1.0 .
+* Mold2-pywrapper - version 0.1.0 .
 * Joblib – version 1.2.0 .
 * Lightgbm – version 4.5.0 .
 * Matplotlib – version 3.8.0 .
