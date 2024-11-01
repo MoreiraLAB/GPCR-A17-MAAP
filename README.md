@@ -7,7 +7,7 @@ G Protein-Coupled Receptors (GPCRs) are vital players in cellular signaling and 
 
 ### Prerequisites:
 GPCR-A17 MAAP was developed and tested as follows:
-> Python 3.7.2 (default, July 12 2024)
+> Python 3.9 (default, July 12 2024)
 
 
 An isolated Conda environment can be created using the following code:
@@ -15,7 +15,7 @@ An isolated Conda environment can be created using the following code:
 cd “change/to/the/directory/where/you/want/to/clone/this/repository”
 ```
 ```bash
-conda create --name GPCR-A17_MAAP python=3.7.2
+conda create --name GPCR-A17_MAAP python=3.9
 conda activate GPCR-A17_MAAP
 ```
 Note: You can choose any name for the environment by specifying it after the "--name" argument in the first step.
@@ -45,77 +45,77 @@ git clone https://github.com/MoreiraLAB/GPCR-A17-MAAP
 
 ### Data:
 
-./data/ folder contains the "GPCRA17.csv" with the full dataset to train and evalute GPCR-A17 MAAP, "Receptor_sequences.fasta" containing the sequences of the proteins used in this study (needed for feature extraction by ProtTrans package) and "ligands_A17.csv" which is the csv file with all unique ligands and respective Smiles of the dataset.  
-The ./dataframes/ folder contains the following datasets: train (TrainDataset.csv), test (TestDataset.csv), validation (ValidationDataset.csv), and a dataset of unseen drugs (DrugsNeverSeen.csv). Each dataset includes columns for Receptor, Receptor Sequence, Ligand, SMILES, and Action. These datasets are intended to be used by the user for benchmarking purposes.
+The ./data/ folder contains the following files: GPCRA17.csv, which includes the full dataset for training and evaluating the GPCR-A17 MAAP; Receptor_sequences.fasta, which contains the sequences of the proteins used in this study (needed for feature extraction by the ProtTrans package); and ligands_A17.csv, which is the CSV file with all unique ligands and their respective SMILES from the dataset. 
+The ./dataframes/ folder contains the following datasets: training (TrainDataset.csv), testing (TestDataset.csv), validation (ValidationDataset.csv), and a dataset of unseen drugs (DrugsNeverSeen.csv). Each dataset includes columns for Receptor, Receptor Sequence, Ligand, SMILES, and Action. These datasets are intended for benchmarking purposes.
 
 ### Replication of GPCR-A17 MAAP:
 Script files:
-After installing and setting up the environment, these scripts should simply run without requiring any changes.
-change/directory/here/to/your/GPCRA17_MAAP/repository
+After installing and setting up the environment, these scripts should run without requiring any changes, except for modifying the directory in variables.py to point to your GPCR_A17_MAAP repository, where it currently says change/directory/here/to/your/GPCR_A17_MAAP/repository.
+
  0) **```variables.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to your GPCR_A17_MAAP repository.
  1) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
-python3 feature_extraction_prottrans.py
+python feature_extraction_prottrans.py
 ```
 
  2) **``` feature_extraction_mold2.py```** - Ligand features extraction. The output of this script can be found in ./features/mold2 folder.
 
 ```bash
-python3 feature_extraction_mold2.py
+python feature_extraction_mold2.py
 ```
  3) **``` join_features.py```** - Script to join the features extracted from proteins and ligands. The new dataset can be found in ./features/ folder.
 
 ```bash
-python3 join_features.py
+python join_features.py
 ```
 
  4) **``` drug_val_dev.py```** - Script for development of the drug validation dataset, and creation of the X and y datasets for the remaining and drug validation datasets. The output can be found in ./features/splits/ folder. 
 
 ```bash
-python3 drug_val_dev.py
+python drug_val_dev.py
 ```
 
  5) **``` xgb_5init_feature_import.py```** - Script to train, test and validate the Extreme Gradient Boosting (XGBoost) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 xgb_5init_feature_import.py
+python xgb_5init_feature_import.py
 ```
 
 6) **``` rf_5init_feature_import.py```** - Script to train, test and validate the Random Forest (RF) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 rf_5init_feature_import.py
+python rf_5init_feature_import.py
 ```
 
 7) **``` gbm_5init_feature_import.py```** - Script to train, test and validate the LightGBM base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 gbm_5init_feature_import.py
+python gbm_5init_feature_import.py
 ```
 
 8) **``` DNN_5init.py```** - Script to train, test and validate the Deep Neural Network (DNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 DNN_5init.py
+python DNN_5init.py
 ```
 
 9) **``` KNN_5init.py```** - Script to train, test and validate the K-Nearest Neighbour (KNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 KNN_5init.py
+python KNN_5init.py
 ```
 
 10) **``` LR_5init.py```** - Script to train, test and validate the Logistic Regression (LR) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 LR_5init.py
+python LR_5init.py
 ```
 
 11) **``` gpcr_a17_maap.py```** - Script to train, test and validate the RF base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in  ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 gpcr_a17_maap.py
+python gpcr_a17_maap.py
 ```
 
 ### Replication of GPCR-A17 MAAP (Ki-filtered):
@@ -127,48 +127,48 @@ cd ./gpcr_a17_maap_Ki_filtered
 1) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
-python3 feature_extraction_prottrans.py
+python feature_extraction_prottrans.py
 ```
 
  2) **``` feature_extraction_mold2.py```** - Ligand features extraction. The output of this script can be found in ./features/mold2 folder.
 
 ```bash
-python3 feature_extraction_mold2.py
+python feature_extraction_mold2.py
 ```
  3) **``` join_features.py```** - Script to join the features extracted from proteins and ligands. The new dataset can be found in ./features/ folder.
 
 ```bash
-python3 join_features.py
+python join_features.py
 ```
 
  4) **``` drug_val_dev.py```** - Script for development of the drug validation dataset, and creation of the X and y datasets for the remaining and drug validation datasets. The output can be found in ./features/splits/ folder. 
 
 ```bash
-python3 drug_val_dev.py
+python drug_val_dev.py
 ```
 
  5) **``` xgb_5init_Kifiltered.py```** - Script to train, test and validate the Extreme Gradient Boosting (XGBoost) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 xgb_5init_ Kifiltered.py
+python xgb_5init_ Kifiltered.py
 ```
 
 6) **``` rf_5init_ Kifiltered.py```** - Script to train, test and validate the Random Forest (RF) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 rf_5init_ Kifiltered.py
+python rf_5init_ Kifiltered.py
 ```
 
 7) **``` gbm_5init_ Kifiltered.py```** - Script to train, test and validate the LightGBM base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 gbm_5init_ Kifiltered.py
+python gbm_5init_ Kifiltered.py
 ```
 
 8) **``` gpcr_a17_maap_Kifiltered.py```** - Script to train, test and validate the LightGBM base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python3 gpcr_a17_maap_ Kifiltered.py
+python gpcr_a17_maap_ Kifiltered.py
 ```
 
 ### New Prediction:
@@ -187,7 +187,7 @@ change/here/to/your/directory/here/gpcr_a17_maap/new_prediction
 1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
 
 ```bash
-python3 new_prediction.py
+python new_prediction.py
 ```
 
 If you have the Ki values available, you can use our GPCR-A17 MAAP (Ki-filtered) to make a new prediction: 
@@ -202,7 +202,7 @@ cd ./gpcr_a17_maap_Ki_filtered/new_prediciton
 1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP (Ki-filtered). This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP_Kifiltered.csv”), which can be found in the new_prediction folder.
 
 ```bash
-python3 new_prediction_Kifiltered.py
+python new_prediction_Kifiltered.py
 ```
 
 Authors:
