@@ -88,7 +88,7 @@ python xgb_5init_feature_import.py
 python rf_5init_feature_import.py
 ```
 
-7) **``` gbm_5init_feature_import.py```** - Script to train, test and validate the LightGBM base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+7) **``` gbm_5init_feature_import.py```** - Script to train, test and validate the Light Gradient Boosting Machine (LightGBM) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
 python gbm_5init_feature_import.py
@@ -112,7 +112,7 @@ python KNN_5init.py
 python LR_5init.py
 ```
 
-11) **``` gpcr_a17_maap.py```** - Script to train, test and validate the RF base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in  ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+11) **``` gpcr_a17_maap.py```** - Script to train, test and validate the GPCR-A17 MAAP metamodel on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in  ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
 python gpcr_a17_maap.py
