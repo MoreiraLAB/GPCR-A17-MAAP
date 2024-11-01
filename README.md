@@ -163,25 +163,25 @@ python drug_val_dev_Kifiltered.py
  5) **``` xgb_5init_Kifiltered.py```** - Script to train, test and validate the Extreme Gradient Boosting (XGBoost) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python xgb_5init_ Kifiltered.py
+python xgb_5init_Kifiltered.py
 ```
 
 6) **``` rf_5init_ Kifiltered.py```** - Script to train, test and validate the Random Forest (RF) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python rf_5init_ Kifiltered.py
+python rf_5init_Kifiltered.py
 ```
 
 7) **``` gbm_5init_ Kifiltered.py```** - Script to train, test and validate the LightGBM base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python gbm_5init_ Kifiltered.py
+python gbm_5init_Kifiltered.py
 ```
 
 8) **``` gpcr_a17_maap_Kifiltered.py```** - Script to train, test and validate the LightGBM base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
-python gpcr_a17_maap_ Kifiltered.py
+python gpcr_a17_maap_Kifiltered.py
 ```
 
 ### New Prediction:
