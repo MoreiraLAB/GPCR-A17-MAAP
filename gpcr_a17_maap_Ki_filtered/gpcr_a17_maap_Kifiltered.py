@@ -87,7 +87,7 @@ meta_features_val = np.hstack((SXval, rf_preds_val, lightgbm_preds_val, xgb_pred
 
 # Meta-model as LightGBM with optimized hyperparameters
 # Load hyperparameters from the JSON file saved before
-with open(HYPERPARAMETERS_FOLDER + SYSTEM_SEP + 'best_hyperparameters_gbm.json', 'r') as f:
+with open(HYPERPARAMETERS_FOLDER + SYSTEM_SEP + 'best_hyperparameters_gbm_ki_filtered.json', 'r') as f:
     loaded_params = json.load(f)
 
 # Helper function to calculate specificity from confusion matrix
