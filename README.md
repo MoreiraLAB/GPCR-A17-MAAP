@@ -37,6 +37,7 @@ These requirements can be met using a pip.
 * Lightgbm – version 4.5.0 .
 * Matplotlib – version 3.8.0 .
 * Seaborn – version 0.12.2 .
+* tensorflow - version 2.18.0 .
 
 After cloning this repository, GPCR-A17 MAAP - Mapping Your Next Bioactive Target can be replicated by following the steps described in section 'Replication' of this repository. 
 ```bash
