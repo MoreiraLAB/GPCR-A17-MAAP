@@ -137,48 +137,48 @@ cd ./gpcr_a17_maap_Ki_filtered
 python variables.py
 ```
 
-2) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
+2) **```feature_extraction_prottrans_Kifiltered.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
 python feature_extraction_prottrans_Kifiltered.py
 ```
 
- 2) **``` feature_extraction_mold2.py```** - Ligand features extraction. The output of this script can be found in ./features/mold2 folder.
+ 2) **```feature_extraction_mold2_Kifiltered.py```** - Ligand features extraction. The output of this script can be found in ./features/mold2 folder.
 
 ```bash
 python feature_extraction_mold2_Kifiltered.py
 ```
- 3) **``` join_features.py```** - Script to join the features extracted from proteins and ligands. The new dataset can be found in ./features/ folder.
+ 3) **```join_features_Kifiltered.py```** - Script to join the features extracted from proteins and ligands. The new dataset can be found in ./features/ folder.
 
 ```bash
 python join_features_Kifiltered.py
 ```
 
- 4) **``` drug_val_dev.py```** - Script for development of the drug validation dataset, and creation of the X and y datasets for the remaining and drug validation datasets. The output can be found in ./features/splits/ folder. 
+ 4) **```drug_val_dev_Kifiltered.py```** - Script for development of the drug validation dataset, and creation of the X and y datasets for the remaining and drug validation datasets. The output can be found in ./features/splits/ folder. 
 
 ```bash
 python drug_val_dev_Kifiltered.py
 ```
 
- 5) **``` xgb_5init_Kifiltered.py```** - Script to train, test and validate the XGBoost base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+ 5) **```xgb_5init_Kifiltered.py```** - Script to train, test and validate the XGBoost (Ki-filtered) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
 python xgb_5init_Kifiltered.py
 ```
 
-6) **``` rf_5init_ Kifiltered.py```** - Script to train, test and validate the RF base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+6) **```rf_5init_Kifiltered.py```** - Script to train, test and validate the RF (Ki-filtered) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
 python rf_5init_Kifiltered.py
 ```
 
-7) **``` gbm_5init_ Kifiltered.py```** - Script to train, test and validate the LightGBM base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+7) **```gbm_5init_Kifiltered.py```** - Script to train, test and validate the LightGBM (Ki-filtered) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
 python gbm_5init_Kifiltered.py
 ```
 
-8) **``` gpcr_a17_maap_Kifiltered.py```** - Script to train, test and validate the GPCR-A17 MAAP (Ki-filtered) metamodel on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+8) **```gpcr_a17_maap_Kifiltered.py```** - Script to train, test and validate the GPCR-A17 MAAP (Ki-filtered) metamodel on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
 python gpcr_a17_maap_Kifiltered.py
@@ -188,14 +188,14 @@ python gpcr_a17_maap_Kifiltered.py
 If you want to make a new prediction, you will need the SMILES and sequences of the ligand-GPCR-A17 complexes you are interested in. Additionally, you have two options, depending on whether you have Ki values available for your drug-GPCR-A17 complexes: use GPCR-A17 MAAP or GPCR-A17 MAAP (Ki-filtered).
 
 If you do not have the Ki values available, you can use our GPCR-A17 MAAP to make a new prediction: 
-You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Save this Excel file as new_prediction.xlsx and place it in the ./data folder. We provide an example file in the ./data folder.
-Change directory to your ./new_prediciton folder:
+You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/new_prediction/data folder. An example file is provided in the same folder for your reference.
+Change directory to your GPCR-A17-MAAP/new_prediction/ folder:
 ```bash
-cd ./ new_prediciton
+cd ./new_prediction/
 ```
 
 0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the ./new_prediction folder.
-change/here/to/your/directory/here/gpcr_a17_maap/new_prediction
+change/here/to/your/directory/here/GPCR-A17-MAAP/new_prediction
 
 1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
 
@@ -204,8 +204,8 @@ python new_prediction.py
 ```
 
 If you have the Ki values available, you can use our GPCR-A17 MAAP (Ki-filtered) to make a new prediction: 
-You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Additionally, you need to provide the Ki values in a third column named "Ki". Save this Excel file as new_prediction.xlsx and place it in the ./data folder. We provide an example file in the ./data folder.
-Change directory to your ./new_prediciton folder:
+You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Additionally, you need to provide the Ki values in a third column named "Ki". Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/gpcr_a17_maap_Ki_filtered/new_prediciton/data folder. An example file is provided in the same folder for your reference.
+Change directory to your ./gpcr_a17_maap_Ki_filtered/new_prediciton folder:
 ```bash
 cd ./gpcr_a17_maap_Ki_filtered/new_prediciton
 ```
