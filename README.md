@@ -194,10 +194,13 @@ Change directory to your GPCR-A17-MAAP/new_prediction/ folder:
 cd ./new_prediction/
 ```
 
-0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the ./new_prediction folder.
-change/here/to/your/directory/here/GPCR-A17-MAAP/new_prediction
+0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the GPCR-A17-MAAP/new_prediction/ folder.
 
-1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
+```bash
+python variables_new_pred.py
+```
+
+2) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
 
 ```bash
 python new_prediction.py
@@ -210,7 +213,11 @@ Change directory to your ./gpcr_a17_maap_Ki_filtered/new_prediciton folder:
 cd ./gpcr_a17_maap_Ki_filtered/new_prediciton
 ```
 
-0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the ./new_prediction folder.
+0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the GPCR-A17-MAAP/gpcr_a17_maap_Ki_filtered/new_prediciton/ folder.
+
+```bash
+python variables_new_pred.py
+```
 
 1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP (Ki-filtered). This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP_Kifiltered.csv”), which can be found in the new_prediction folder.
 
