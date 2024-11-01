@@ -94,19 +94,19 @@ python rf_5init_feature_import.py
 python gbm_5init_feature_import.py
 ```
 
-8) **``` DNN_5init.py```** - Script to train, test and validate the Deep Neural Network (DNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+8) **``` DNN_5init.py```** - Script to train, test and validate the Deep Neural Network (DNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed. Note that this script is not needed for training the GPCR-A17 MAAP metamodel.
 
 ```bash
 python DNN_5init.py
 ```
 
-9) **``` KNN_5init.py```** - Script to train, test and validate the K-Nearest Neighbour (KNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+9) **``` KNN_5init.py```** - Script to train, test and validate the K-Nearest Neighbour (KNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed. Note that this script is not needed for training the GPCR-A17 MAAP metamodel.
 
 ```bash
 python KNN_5init.py
 ```
 
-10) **``` LR_5init.py```** - Script to train, test and validate the Logistic Regression (LR) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+10) **``` LR_5init.py```** - Script to train, test and validate the Logistic Regression (LR) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation and the feature importance plots will be displayed. Note that this script is not needed for training the GPCR-A17 MAAP metamodel.
 
 ```bash
 python LR_5init.py
