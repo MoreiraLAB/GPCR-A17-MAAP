@@ -46,6 +46,7 @@ git clone https://github.com/MoreiraLAB/GPCR-A17-MAAP
 ### Data:
 
 The ./data/ folder contains the following files: GPCRA17.csv, which includes the full dataset for training and evaluating the GPCR-A17 MAAP; Receptor_sequences.fasta, which contains the sequences of the proteins used in this study (needed for feature extraction by the ProtTrans package); and ligands_A17.csv, which is the CSV file with all unique ligands and their respective SMILES from the dataset. 
+
 The ./dataframes/ folder contains the following datasets: training (TrainDataset.csv), testing (TestDataset.csv), validation (ValidationDataset.csv), and a dataset of unseen drugs (DrugsNeverSeen.csv). Each dataset includes columns for Receptor, Receptor Sequence, Ligand, SMILES, and Action. These datasets are intended for benchmarking purposes.
 
 ### Replication of GPCR-A17 MAAP:
