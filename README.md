@@ -207,10 +207,10 @@ python new_prediction.py
 ```
 
 If you have the Ki values available, you can use our GPCR-A17 MAAP (Ki-filtered) to make a new prediction: 
-You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Additionally, you need to provide the Ki values in a third column named "Ki". Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/gpcr_a17_maap_Ki_filtered/new_prediciton/data folder. An example file is provided in the same folder for your reference.
-Change directory to your ./gpcr_a17_maap_Ki_filtered/new_prediciton folder:
+You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Additionally, you need to provide the Ki values in a third column named "Ki". Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/gpcr_a17_maap_Ki_filtered/new_prediction/data folder. An example file is provided in the same folder for your reference.
+Change directory to your ./gpcr_a17_maap_Ki_filtered/new_prediction folder:
 ```bash
-cd ./gpcr_a17_maap_Ki_filtered/new_prediciton
+cd ./gpcr_a17_maap_Ki_filtered/new_prediction/
 ```
 
 0) **```variables_new_pred.py```** - Includes variables that are called throughout the pipeline. Ensure you change in this script the directory to the GPCR-A17-MAAP/gpcr_a17_maap_Ki_filtered/new_prediciton/ folder.
