@@ -61,7 +61,7 @@ After installing and setting up the environment, these scripts should run withou
 python variables.py
 ```
 
- 2) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
+ 1) **```feature_extraction_prottrans.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
 python feature_extraction_prottrans.py
@@ -137,7 +137,7 @@ cd ./gpcr_a17_maap_Ki_filtered
 python variables.py
 ```
 
-2) **```feature_extraction_prottrans_Kifiltered.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
+1) **```feature_extraction_prottrans_Kifiltered.py```** - Protein features extraction. The output of this script can be found in ./features/prottrans folder.
 
 ```bash
 python feature_extraction_prottrans_Kifiltered.py
@@ -200,7 +200,7 @@ cd ./new_prediction/
 python variables_new_pred.py
 ```
 
-2) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
+1) **``` new_prediction.py```** - Script to make a new prediciton using GPCR-A17 MAAP. This will output a CSV file with your predicitons (“predictions_GPCRA17_MAAP.csv”), which can be found in the new_prediction folder.
 
 ```bash
 python new_prediction.py
