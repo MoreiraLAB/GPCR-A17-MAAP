@@ -37,7 +37,6 @@ These requirements can be met using a pip.
 * Lightgbm – version 4.5.0 .
 * Matplotlib – version 3.8.0 .
 * Seaborn – version 0.12.2 .
-* tensorflow - version 2.18.0 .
 
 After cloning this repository, GPCR-A17 MAAP - Mapping Your Next Bioactive Target can be replicated by following the steps described in section 'Replication' of this repository. 
 ```bash
@@ -102,25 +101,7 @@ python rf_5init_feature_import.py
 python gbm_5init_feature_import.py
 ```
 
-8) **``` DNN_5init.py```** - Script to train, test and validate the Deep Neural Network (DNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation will be displayed. Note that this script is not needed for training the GPCR-A17 MAAP metamodel.
-
-```bash
-python DNN_5init.py
-```
-
-9) **``` KNN_5init.py```** - Script to train, test and validate the K-Nearest Neighbour (KNN) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation will be displayed. Note that this script is not needed for training the GPCR-A17 MAAP metamodel.
-
-```bash
-python KNN_5init.py
-```
-
-10) **``` LR_5init.py```** - Script to train, test and validate the Logistic Regression (LR) base model on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in ./models/ folder. The hyperparameters optimised with Optuna can be found in ./best_hyperparameters/ folder. The metrics with standard deviation will be displayed. Note that this script is not needed for training the GPCR-A17 MAAP metamodel.
-
-```bash
-python LR_5init.py
-```
-
-11) **``` gpcr_a17_maap.py```** - Script to train, test and validate the GPCR-A17 MAAP metamodel on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in  ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
+8) **``` gpcr_a17_maap.py```** - Script to train, test and validate the GPCR-A17 MAAP metamodel on the training, testing and drug validation dataset (drugs never seen). The trained model can be found in  ./models/ folder. The metrics with standard deviation and the feature importance plots will be displayed.
 
 ```bash
 python gpcr_a17_maap.py
