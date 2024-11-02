@@ -12,7 +12,7 @@ __project__ = "GPCR-A17 MAAP: Mapping Modulators, Agonists, and Antagonists to P
 
 #Folder locations
 SYSTEM_SEP = "/"
-DEFAULT_LOCATION = r"/change/the/directory/GPCRA17_MAAP/gpcr_a17_maap_Ki_filtered/new_prediction" #Change here for your working directory
+DEFAULT_LOCATION = r"/change/the/directory/GPCR-A17-MAAP-main/gpcr_a17_maap_Ki_filtered/new_prediction" #Change here for your working directory
 DATA_FOLDER = DEFAULT_LOCATION + SYSTEM_SEP + "data"
 FEATURES_FOLDER = DEFAULT_LOCATION + SYSTEM_SEP + "features"
 MODEL_FOLDER = DEFAULT_LOCATION + SYSTEM_SEP + "models"
