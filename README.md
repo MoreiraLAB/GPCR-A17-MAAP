@@ -37,6 +37,7 @@ These requirements can be met using a pip.
 * Lightgbm – version 4.5.0 .
 * Matplotlib – version 3.8.0 .
 * Seaborn – version 0.12.2 .
+* openpyxl – version 3.1.5 .
 
 After cloning this repository, GPCR-A17 MAAP - Mapping Your Next Bioactive Target can be replicated by following the steps described in section 'Replication' of this repository. 
 ```bash
@@ -169,7 +170,7 @@ python gpcr_a17_maap_Kifiltered.py
 If you want to make a new prediction, you will need the SMILES and sequences of the ligand-GPCR-A17 complexes you are interested in. Additionally, you have two options, depending on whether you have Ki values available for your drug-GPCR-A17 complexes: use GPCR-A17 MAAP or GPCR-A17 MAAP (Ki-filtered).
 
 If you do not have the Ki values available, you can use our GPCR-A17 MAAP to make a new prediction: 
-You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/new_prediction/data folder. An example file is provided in the same folder for your reference.
+You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/new_prediction/data folder. An example file is provided in the same folder for your reference. Note: Please unzip the X_GPCRA17_Mold_PT.zip file and place the extracted contents in this directory.
 Change directory to your GPCR-A17-MAAP/new_prediction/ folder:
 ```bash
 cd ./new_prediction/
@@ -188,7 +189,7 @@ python new_prediction.py
 ```
 
 If you have the Ki values available, you can use our GPCR-A17 MAAP (Ki-filtered) to make a new prediction: 
-You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Additionally, you need to provide the Ki values in a third column named "Ki". Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/gpcr_a17_maap_Ki_filtered/new_prediction/data folder. An example file is provided in the same folder for your reference.
+You will need to prepare an Excel file with the SMILES and sequences of your complexes in the "smile" and "sequence" columns. Additionally, you need to provide the Ki values in a third column named "Ki". Save this Excel file as new_prediction.xlsx and place it in the GPCR-A17-MAAP/gpcr_a17_maap_Ki_filtered/new_prediction/data folder. An example file is provided in the same folder for your reference. Note: Please unzip the X_GPCRA17_ki_filtered_Mold_PT.zip file and place the extracted contents in this directory.
 Change directory to your ./gpcr_a17_maap_Ki_filtered/new_prediction folder:
 ```bash
 cd ./gpcr_a17_maap_Ki_filtered/new_prediction/
