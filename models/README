@@ -1,2 +1,2 @@
-Directory for saving the best models of each base model (lightGBM, Random Forest, and XGBoost) and the metamodel GPCR-A17-MAAP.
+Directory for saving the best models of each base model (lightGBM, Random Forest, and XGBoost) and metamodel GPCR-A17-MAAP.
 You can find "best_GPCRA17MAAP_meta_model_run_3.joblib", "best_lgbm_model_run_3.joblib", "best_rf_model_run_3.joblib", and "best_xgboost_model_run_4.joblib" in the /GPCR-A17-MAAP/models folder at https://bit.ly/40uEb1x.
