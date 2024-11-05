@@ -1,1 +1,2 @@
 Directory to save the dataset with protein and ligand features of the new prediction (Ki-filtered) data. 
+Please download "ProtTrans_Mold2_Ki_features.csv" from the /gpcr_a17_maap_Ki_filtered/new_prediction/features folder at https://bit.ly/40uEb1x and place them in this directory.
