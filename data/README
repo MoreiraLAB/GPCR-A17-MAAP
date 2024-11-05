@@ -1,1 +1,2 @@
 Directory of initial data. "GPCRA17.csv" contains the full dataset to train and evalute GPCR-A17-MAAP, "Receptor_sequences.fasta" contains the sequences of the proteins used in this study (needed for feature extraction by ProtTrans package) and "ligands_A17.csv" contains all unique ligands and respective Smiles of the dataset. 
+Please download "GPCRA17.csv" and "ligands_A17.csv" from https://bit.ly/40uEb1x and place them in this directory.
