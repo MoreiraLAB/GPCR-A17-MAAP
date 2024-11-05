@@ -1,2 +1,2 @@
-Directory with the best models of each base model (LightGBM (Ki-filtered, RF (Ki-filtered, and XGBoost (Ki-filtered)) and the metamodel GPCR-A17-MAAP (Ki-filtered), to use in new predictions.
+Directory with the best models of each base model (LightGBM (Ki-filtered, RF (Ki-filtered, and XGBoost (Ki-filtered)) and the metamodel GPCR-A17-MAAP (Ki-filtered) to use in new predictions.
 Please download "best_ki_filtered_lgbm_model_run_1.joblib", "best_ki_filtered_meta_model_run_3.joblib", "best_ki_filtered_rf_model_run_3.joblib", and "best_ki_filtered_xgboost_model_run_3.joblib" from the /gpcr_a17_maap_Ki_filtered/new_prediction/models folder at https://bit.ly/40uEb1x and place them in this directory.
