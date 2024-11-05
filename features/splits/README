@@ -1,1 +1,2 @@
 Directory for saving the drug validation dataset and the remaining datasets for splitting.
+You can find "X_DNS_Mold_PT.csv", "X_GPCRA17_Mold_PT.csv", "y_DNS_Mold_PT.csv", and "y_GPCRA17_Mold_PT.csv" in the /GPCR-A17-MAAP/features/splits folder at https://bit.ly/40uEb1x.
