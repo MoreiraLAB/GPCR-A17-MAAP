@@ -1,1 +1,2 @@
 Directory for saving the drug validation dataset (Ki-filtered) and remaining datasets (Ki-filtered) for splitting.
+You can find "X_DNS_ki_filtered_Mold_PT.csv", "X_GPCRA17_ki_filtered_Mold_PT.csv", "y_DNS_ki_filtered_Mold_PT.csv", and "y_GPCRA17_ki_filtered_Mold_PT.csv" in the /gpcr_a17_maap_Ki_filtered/features/splits folder at https://bit.ly/40uEb1x.
