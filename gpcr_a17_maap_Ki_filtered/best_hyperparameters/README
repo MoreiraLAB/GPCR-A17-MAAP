@@ -1,1 +1,2 @@
 Directory with the best hyperparameters obtained with Optuna for each base model (LightGBM, Random Forest, and XGBoost), to develop the GPCR-A17-MAAP (Ki-filtered) metamodel. 
+Please download "best_hyperparameters_gbm_ki_filtered.json", "best_hyperparameters_rf_ki_filtered.json", and "best_hyperparameters_xgb_ki_filtered.json" from the /gpcr_a17_maap_Ki_filtered/best_hyperparameters folder at https://bit.ly/40uEb1x and place them in this directory.
