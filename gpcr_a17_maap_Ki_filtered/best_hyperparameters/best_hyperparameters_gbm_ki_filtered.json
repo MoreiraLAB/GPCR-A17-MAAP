@@ -1,1 +1,0 @@
-{"objective": "multiclass", "boosting_type": "gbdt", "n_estimators": 572, "learning_rate": 0.01597020644399367, "max_depth": 6, "min_child_weight": 4, "gamma": 0.2820167302559291, "subsample": 0.7625832298036728, "colsample_bytree": 0.7138923934210505, "reg_alpha": 0.29198789947801423, "reg_lambda": 3.2982675160982717, "verbosity": -1}
