@@ -1,9 +1,9 @@
-This directory contains the datasets used to train, validate, and test the GPCR-A17-MAAP (Ki-filtered) metamodel, as well as an additional dataset, Drugs Never Seen, which includes ligands not previously encountered by the model during training or testing. These datasets are made available for download to facilitate reproducibility of the GPCR-A17-MAAP (Ki-filtered) metamodel and to support benchmark comparisons with new or existing datasets.
+This directory contains the datasets used to train, validate, and test the GPCR-A17-MAAP (Ki-filtered) metamodel, as well as an additional dataset, Drugs Never Seen, which includes ligands not previously encountered by the model during training or testing. These datasets are made available for download to facilitate the reproducibility of the GPCR-A17-MAAP (Ki-filtered) metamodel and to support benchmark comparisons with new or existing datasets.
 
 You can find these datasets in the /gpcr_a17_maap_Ki_filtered/dataframes folder at https://bit.ly/40uEb1x.
 
 Datasets Included:
-Train (Ki-filtered): Dataset used for training the model.
-Validation (Ki-filtered): Dataset for model tuning and hyperparameter optimization.
+Training (Ki-filtered): Dataset used for training the model.
+Validation (Ki-filtered): Dataset for model tuning and hyperparameter optimisation.
 Test (Ki-filtered): Dataset for model evaluation, offering insights into performance on known data.
-Drugs Never Seen (Ki-filtered): Dataset containing novel ligands, allowing for external validation and performance assessment on data outside the model’s training scope.
+Drugs Never Seen (Ki-filtered): Dataset containing novel ligands, allowing for external validation and performance assessment of data outside the model’s training scope.
