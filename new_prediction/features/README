@@ -1,1 +1,2 @@
 Directory containing the dataset with protein and ligand features for use in new predictions.
+Please download "GPCRA17_features_Mold2_PT.csv" from the /GPCR-A17-MAAP/new_prediction/features folder at https://bit.ly/40uEb1x and place them in this directory.
