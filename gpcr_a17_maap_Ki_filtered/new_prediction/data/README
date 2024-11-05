@@ -1,2 +1,3 @@
 Directory with an example of a dataset for new prediction (Ki-filtered), and also the drug validation dataset and remaining datasets for splitting and to use in new predictions for ligand-GPCR-A17 complexes with Ki values.
 Please download "X_DNS_ki_filtered_Mold_PT.csv", "X_GPCRA17_ki_filtered_Mold_PT.csv", "y_DNS_ki_filtered_Mold_PT.csv", and "y_GPCRA17_ki_filtered_Mold_PT.csv" from the /gpcr_a17_maap_Ki_filtered/new_prediction/data folder at https://bit.ly/40uEb1x and place them in this directory.
+You can also find the example file "new_prediction.xlsx" in the same folder.
