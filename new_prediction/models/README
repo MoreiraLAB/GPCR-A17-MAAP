@@ -1,2 +1,2 @@
-Directory for saving the best models of each base model and the metamodel GPCR-A17-MAAP, for new predictions.
+Directory for saving the best models of each base model and the metamodel GPCR-A17-MAAP for new predictions.
 Please download "best_GPCRA17MAAP_meta_model_run_3.joblib", "best_lgbm_model_run_3.joblib", "best_rf_model_run_3.joblib", and "best_xgboost_model_run_4.joblib" from the /GPCR-A17-MAAP/new_prediction/models folder at https://bit.ly/40uEb1x and place them in this directory.
