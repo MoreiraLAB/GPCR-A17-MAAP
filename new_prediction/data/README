@@ -1,3 +1,3 @@
-Directory with an example of a dataset for new prediction, and also the drug validation dataset and remaining datasets for splitting and to use in new predictions.
+Directory with an example of a dataset for new prediction, as well as the drug validation dataset and remaining datasets for splitting and use in new predictions.
 Please download "X_DNS_Mold_PT.csv", "X_GPCRA17_Mold_PT.csv", "y_DNS_Mold_PT.csv", and "y_GPCRA17_Mold_PT.csv" from the /GPCR-A17-MAAP/new_prediction/data folder at https://bit.ly/40uEb1x and place them in this directory.
 You can also find the example file "new_prediction.xlsx" in the same folder.
