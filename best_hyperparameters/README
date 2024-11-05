@@ -1,1 +1,2 @@
 Directory with the best hyperparameters obtained using Optuna for each base model (LightGBM, Random Forest, and XGBoost).  
+Please download "best_hyperparameters_LightGBM.json", "best_hyperparameters_RF.json", and "best_hyperparameters_XGBoost.json" from the /GPCR-A17-MAAP/best_hyperparameters folder at https://bit.ly/40uEb1x and place them in this directory.
