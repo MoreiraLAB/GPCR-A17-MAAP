@@ -1,2 +1,2 @@
-Directory for saving the best models of each base model (lightGBM (Ki-filtered), Random Forest (Ki-filtered), and XGBoost (Ki-filtered)) and the metamodel GPCR-A17-MAAP (Ki-filtered).
+Directory for saving the best models of each base model (lightGBM (Ki-filtered), Random Forest (Ki-filtered), and XGBoost (Ki-filtered)) and metamodel GPCR-A17-MAAP (Ki-filtered).
 You can find "best_ki_filtered_lgbm_model_run_1.joblib", "best_ki_filtered_meta_model_run_3.joblib", "best_ki_filtered_rf_model_run_3.joblib", and "best_ki_filtered_xgboost_model_run_3.joblib" in the /gpcr_a17_maap_Ki_filtered/models folder at https://bit.ly/40uEb1x.
