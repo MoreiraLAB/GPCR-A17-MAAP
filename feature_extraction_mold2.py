@@ -39,11 +39,16 @@ mold2 = Mold2()
 # Calculate descriptors using Mold2
 descriptors = mold2.calculate(mols)
 
-# Convert the descriptors to a pandas DataFrame
+# Convert to DataFrame
 descriptors_df = pd.DataFrame(descriptors)
-
-# Add the valid SMILES strings as a new column in the DataFrame
 descriptors_df['Smiles'] = valid_smiles
+
+# Remove SMILES rows where any descriptor has extreme (artifact) values
+ARTIFACT_THRESHOLD = 1e30
+artifact_mask = (descriptors_df.drop(columns='Smiles') > ARTIFACT_THRESHOLD).any(axis=1)
+if artifact_mask.sum() > 0:
+    print(f"Removing {artifact_mask.sum()} SMILES with artifact-level descriptor values.")
+descriptors_df = descriptors_df[~artifact_mask].reset_index(drop=True)
 
 feature_detail = mold2.descriptor_details()
 
