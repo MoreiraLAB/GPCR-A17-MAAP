@@ -60,7 +60,7 @@ y_val_np = np.asarray(y_val).ravel()
 
 # Load ML models
 # Load best XGBoost base model
-XBG_model = joblib.load( MODEL_FOLDER + SYSTEM_SEP + 'best_xgboost_model_run_4.joblib') #Change the run number, if it is different
+XBG_model = joblib.load( MODEL_FOLDER + SYSTEM_SEP + 'best_xgboost_model_run_3.joblib') #Change the run number, if it is different
 # Load best LightGBM base model
 LightGBM_model = joblib.load(MODEL_FOLDER + SYSTEM_SEP + 'best_lgbm_model_run_3.joblib') #Change the run number, if it is different
 # Load best Random Forest base model
@@ -90,7 +90,7 @@ meta_features_val = np.hstack((SXval, rf_preds_val, lightgbm_preds_val, xgb_pred
 
 # Meta-model as LightGBM with optimized hyperparameters
 # Load hyperparameters from the JSON file saved before
-with open(HYPERPARAMETERS_FOLDER + SYSTEM_SEP + 'best_hyperparameters_XGBoost.json', 'r') as f:
+with open(HYPERPARAMETERS_FOLDER + SYSTEM_SEP + 'best_hyperparameters_LightGBM.json', 'r') as f:
     loaded_params = json.load(f)
 
 # Helper function to calculate specificity from confusion matrix
