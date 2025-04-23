@@ -12,7 +12,7 @@ __project__ = "GPCR-A17 MAAP: Mapping Modulators, Agonists, and Antagonists to P
 
 #Folder locations
 SYSTEM_SEP = "/"
-DEFAULT_LOCATION = r"/Users/Beatriz/iCloudDrive/Documentos/BI_DDMD/ML_activationGPCRs/GPCR-A17-MAAP-main/new_prediction" #Change here for your working directory
+DEFAULT_LOCATION = r"/change/to/your/directory/GPCR-A17-MAAP-main/new_prediction" #Change here for your working directory
 DATA_FOLDER = DEFAULT_LOCATION + SYSTEM_SEP + "data"
 FEATURES_FOLDER = DEFAULT_LOCATION + SYSTEM_SEP + "features"
 MODEL_FOLDER = DEFAULT_LOCATION + SYSTEM_SEP + "models"
