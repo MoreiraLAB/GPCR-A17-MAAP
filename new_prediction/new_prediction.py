@@ -175,7 +175,7 @@ xgb_preds_new = XBG_model.predict_proba(SX_new_pred)
 meta_features_new = np.hstack((SX_new_pred, rf_preds_new, lightgbm_preds_new, xgb_preds_new))
 
 # Load the pre-trained GPCR_A17_MAAP model
-gpcr_a17_maap = joblib.load(MODEL_FOLDER + SYSTEM_SEP + 'best_GPCRA17MAAP_meta_model_run_0.joblib')
+gpcr_a17_maap = joblib.load(MODEL_FOLDER + SYSTEM_SEP + 'best_GPCRA17MAAP_meta_model_run_2.joblib')
 
 # Use the model to make predictions on the standardized new prediction data + class probabilities (meta_features_new)
 new_predictions = gpcr_a17_maap.predict(meta_features_new)
