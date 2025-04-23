@@ -154,7 +154,7 @@ for run in range(n_runs):
         best_run = run
 
 # Save the best model using joblib
-joblib.dump(best_model, MODEL_FOLDER + SYSTEM_SEP + f'best_GPCRA17MAAP_meta_model_XGB_run_{best_run}.joblib')
+joblib.dump(best_model, MODEL_FOLDER + SYSTEM_SEP + f'best_GPCRA17MAAP_meta_model_run_{best_run}.joblib')
 
 # Convert lists to numpy arrays for easy calculation of mean and std deviation
 metrics_test = np.array(metrics_test)
